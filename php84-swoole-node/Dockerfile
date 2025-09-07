@@ -33,7 +33,7 @@ RUN set -eux \
     && cp "${PATH_PHPCONFIGBIN}" /tmp/php-config
 
 FROM debian:bookworm-slim
-LABEL maintainer="aybarsm" tag_build="20250808"
+LABEL maintainer="aybarsm" tag_build="$BUILD_DATE"
 
 ARG VER_S6OVERLAY='3.2.1.0'
 ARG VER_NODEJS='22'
