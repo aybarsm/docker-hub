@@ -39,6 +39,4 @@ RUN set -eux \
     && chown -R semaphore:0 /usr/share/ansible \
     && rm -rf /tmp/* /var/tmp/*
 
-ENV VIRTUAL_ENV_PACKAGES="$(cat /tmp/path_site_packages)"
-
 USER 1001
