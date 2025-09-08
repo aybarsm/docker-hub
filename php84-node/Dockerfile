@@ -60,6 +60,8 @@ RUN set -eux \
     && curl -sLS https://deb.nodesource.com/setup_${VER_NODEJS}.x | bash - \
     && DEBIAN_FRONTEND=noninteractive apt-get update -y \
     && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y \
+        jq \
+        git \
 		php8.4-fpm \
         php8.4-amqp \
         php8.4-bcmath \
